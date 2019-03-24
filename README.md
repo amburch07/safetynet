@@ -32,7 +32,7 @@ https://drive.google.com/open?id=1S-mWfgBwOxBod22Bx9PY46FBtKiN-EQT
 `python src/classifier.py CLASSIFY datasets/test_clean models/20180408-102900.pb models/classifier.pkl`
 
 #### Classification of Camera Input (assuming one frame)
-Save image in `datasets/test_pi` as .jpg
+Save image in `datasets/test_pi` as .jpg in `Unknown` subfolder
 
 `python src/classifier.py CLASSIFY datasets/test_pi/Unknown models/20180408-102900.pb models/classifier.pkl`
 or
