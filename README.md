@@ -29,6 +29,8 @@ https://drive.google.com/uc?id=1R77HmFADxe87GmoLwzfgMu_HY0IhcyBz&export=download
 `python src/classifier.py CLASSIFY datasets/test_clean models/20180408-102900.pb models/classifier.pkl`
 
 #### Classification of Camera Input (assuming one frame)
+Save image in `datasets/test_pi` as .jpg
+
 `python src/classifier.py CLASSIFY datasets/test_pi/Unknown models/20180408-102900.pb models/classifier.pkl`
 or
 `python src/classifier.py CLASSIFY datasets/test_pi/Unknown models/20180408-102900.pb models/classifier.pkl > output.txt`
