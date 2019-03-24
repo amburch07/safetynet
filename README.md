@@ -1,3 +1,46 @@
+# Facial Recognition via Transfer Learning using Tensorflow
+
+Custom testing and training datasets from collected Google images of celebrities and subset of VGGFace. Generated dataset provides a more representative data sample, in terms of: race, gender, ethnicity, sexual orientation, citizenship, age, etc., than the previous VGGFace (skews white, male, etc.).
+
+
+Designed and implemented at TechTogether Hackathon 2019 (Boston) by Ari Burch, Sophia Lee, An Huynh. 
+
+Connected to hackathon project alongside: https://github.com/huynhtan97/safetynetWeb
+
+## To Setup
+Install dependancies according to `requirements.txt`
+
+Import model parameters (pretrained model) and save under `models` folder:
+
+https://drive.google.com/uc?id=1R77HmFADxe87GmoLwzfgMu_HY0IhcyBz&export=download
+
+
+## To Run
+
+#### Align Training Set (Isolate Face)
+`python src/align/align_dataset_mtcnn.py datasets/train datasets/train_clean`
+
+#### Train Classifier
+`python src/classifier.py TRAIN datasets/train_clean /models/20180408-102900.pb models/classifier.pkl --batch_size 25`
+
+#### Align Test
+`python src/align/align_dataset_mtcnn.py datasets/test datasets/test_clean`
+
+#### Classification of Test Set
+`python src/classifier.py CLASSIFY datasets/test_clean models/20180408-102900.pb models/classifier.pkl`
+
+#### Classification of Camera Input (assuming one frame)
+`python src/classifier.py CLASSIFY datasets/test_pi/Unknown models/20180408-102900.pb models/classifier.pkl`
+or
+`python src/classifier.py CLASSIFY datasets/test_pi/Unknown models/20180408-102900.pb models/classifier.pkl > output.txt`
+
+
+### Original Code source: https://github.com/davidsandberg/facenet
+
+----
+
+
+
 # Face Recognition using Tensorflow [![Build Status][travis-image]][travis]
 
 [travis-image]: http://travis-ci.org/davidsandberg/facenet.svg?branch=master
