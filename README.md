@@ -1,11 +1,10 @@
 # Facial Recognition via Transfer Learning using Tensorflow
 
-Custom testing and training datasets from collected Google images of celebrities and subset of VGGFace. Generated dataset provides a more representative data sample, in terms of: race, gender, ethnicity, sexual orientation, citizenship, age, etc., than the previous VGGFace (skews white, male, etc.).
-
-
-Designed and implemented at TechTogether Hackathon 2019 (Boston) by Ari Burch, Sophia Lee, An Huynh. 
-
-Connected to hackathon project alongside: https://github.com/huynhtan97/safetynetWeb
+* Train tensorflow FaceNet model on classes of individal pre-defined users or celebrity images
+* Custom testing and training datasets created from subset of VGGFace and collected Google images of celebrities
+* Generated dataset provides a more representative data sample in terms of: race, gender, ethnicity, sexual orientation, citizenship, age, etc., than the previous VGGFace (skews white, male, etc.).
+* Designed and implemented at TechTogether Hackathon 2019 (Boston) by Ari Burch, Sophia Lee, An Huynh. 
+* Connected to hackathon project alongside: https://github.com/huynhtan97/safetynetWeb
 
 ## To Setup
 Install dependancies according to `requirements.txt`
