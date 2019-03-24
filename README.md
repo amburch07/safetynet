@@ -7,13 +7,12 @@
 * Connected to hackathon project alongside: https://github.com/huynhtan97/safetynetWeb
 
 ## To Setup
-Install dependancies according to `requirements.txt`
-
-Import model parameters (pretrained model) and save under `models` folder:
+1. Install dependancies according to `requirements.txt`
+2. Import model parameters (pretrained model) and save under `models` folder:
 
 https://drive.google.com/uc?id=1R77HmFADxe87GmoLwzfgMu_HY0IhcyBz&export=download
 
-Import datasets (test/train) and save:
+3. Import datasets (test/train) and save:
 
 https://drive.google.com/open?id=1S-mWfgBwOxBod22Bx9PY46FBtKiN-EQT
 
