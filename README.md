@@ -34,9 +34,11 @@ https://drive.google.com/open?id=1S-mWfgBwOxBod22Bx9PY46FBtKiN-EQT
 #### Classification of Camera Input (assuming one frame)
 Save image in `datasets/test_pi` as .jpg in `Unknown` subfolder
 
-`python src/classifier.py CLASSIFY datasets/test_pi/Unknown models/20180408-102900.pb models/classifier.pkl`
+Align input: `python src/align/align_dataset_mtcnn.py datasets/test_pi datasets/test_clean`
+
+`python src/classifier.py CLASSIFY datasets/test_pi models/20180408-102900.pb models/classifier.pkl`
 or
-`python src/classifier.py CLASSIFY datasets/test_pi/Unknown models/20180408-102900.pb models/classifier.pkl > output.txt`
+`python src/classifier.py CLASSIFY datasets/test_pi models/20180408-102900.pb models/classifier.pkl > output.txt`
 
 
 ### Original Code source: https://github.com/davidsandberg/facenet
