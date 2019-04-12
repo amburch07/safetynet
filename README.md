@@ -36,9 +36,9 @@ Save image in `datasets/test_pi` as Unknown_0001.jpg in `Unknown` subfolder
 
 Align input: `python src/align/align_dataset_mtcnn.py datasets/test_pi datasets/test_pi_clean`
 
-`python src/classifier.py CLASSIFY datasets/test_pi models/20180408-102900.pb models/classifier.pkl`
+`python src/classifier.py CLASSIFY datasets/test_pi_clean models/20180408-102900.pb models/classifier.pkl`
 or
-`python src/classifier.py CLASSIFY datasets/test_pi models/20180408-102900.pb models/classifier.pkl > output.txt`
+`python src/classifier.py CLASSIFY datasets/test_pi_clean models/20180408-102900.pb models/classifier.pkl > output.txt`
 
 
 ### Original Code source: https://github.com/davidsandberg/facenet
